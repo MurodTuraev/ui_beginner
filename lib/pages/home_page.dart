@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int count=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +21,16 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Center(
-        child: Text("Welcome to HOME!!!", style: TextStyle(color: Colors.pink, fontSize: 32),),
+        child: Text("Plus pressed $count ", style: TextStyle(color: Colors.pink, fontSize: 32),),
       ),
       floatingActionButton: FloatingActionButton(
         elevation: 10.0,
         child: Icon(Icons.add),
-        onPressed: (){},
+        onPressed: (){
+          setState(() {
+            count++;
+          });
+        },
       ),
     );
   }
