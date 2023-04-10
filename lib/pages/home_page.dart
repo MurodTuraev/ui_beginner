@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("INS demo"),
+        title: Text("INS demo", style: TextStyle(color: Colors.black26),),
         centerTitle: true,
         actions: [
           Icon(Icons.notifications),
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Center(
-        child: Text("Welcome to HOME!!!"),
+        child: Text("Welcome to HOME!!!", style: TextStyle(color: Colors.pink, fontSize: 32),),
       ),
       floatingActionButton: FloatingActionButton(
         elevation: 10.0,
@@ -30,3 +30,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
