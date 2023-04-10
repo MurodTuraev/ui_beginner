@@ -12,26 +12,29 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("INS demo", style: TextStyle(color: Colors.black26),),
-        centerTitle: true,
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(width: 16,)
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: Text("INS demo", style: TextStyle(color: Colors.black26),),
+      //   centerTitle: true,
+      //   actions: [
+      //     Icon(Icons.notifications),
+      //     SizedBox(width: 16,)
+      //   ],
+      // ),
       body: Center(
-        child: Text("Plus pressed $count ", style: TextStyle(color: Colors.pink, fontSize: 32),),
+        child: Image(
+          image: AssetImage('assets/images/lc_image2.jpeg'),
+        ),
+        // child: Text("Plus pressed $count ", style: TextStyle(color: Colors.pink, fontSize: 32),),
       ),
-      floatingActionButton: FloatingActionButton(
-        elevation: 10.0,
-        child: Icon(Icons.add),
-        onPressed: (){
-          setState(() {
-            count++;
-          });
-        },
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   elevation: 10.0,
+      //   child: Icon(Icons.add),
+      //   onPressed: (){
+      //     setState(() {
+      //       count++;
+      //     });
+      //   },
+      // ),
     );
   }
 }
