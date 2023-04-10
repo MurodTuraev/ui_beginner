@@ -21,8 +21,16 @@ class _HomePageState extends State<HomePage> {
       //   ],
       // ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/images/lc_image2.jpeg'),
+        child: IconButton(
+          icon: Icon(Icons.access_alarm),
+          style: TextButton.styleFrom(
+            foregroundColor: Colors.greenAccent,
+            padding: const EdgeInsets.all(16.0),
+            textStyle: const TextStyle(fontSize: 20),
+          ),
+          onPressed: (){},
+          // child: Text("Press me"),
+
         ),
         // child: Text("Plus pressed $count ", style: TextStyle(color: Colors.pink, fontSize: 32),),
       ),
