@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,37 +14,102 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("INS demo", style: TextStyle(color: Colors.black26),),
-      //   centerTitle: true,
-      //   actions: [
-      //     Icon(Icons.notifications),
-      //     SizedBox(width: 16,)
-      //   ],
-      // ),
       body: Center(
-        child: IconButton(
-          icon: Icon(Icons.access_alarm),
-          style: TextButton.styleFrom(
-            foregroundColor: Colors.greenAccent,
-            padding: const EdgeInsets.all(16.0),
-            textStyle: const TextStyle(fontSize: 20),
-          ),
-          onPressed: (){},
-          // child: Text("Press me"),
+        child: Stack(
+          children: [
+            Container(
+              color: Colors.lightBlueAccent,
+            ),
+            Container(
+              // margin: EdgeInsets.all(15.0),
+              // padding: EdgeInsets.all(3.0),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.blueAccent, width: 20.0)
+              ),
+            ),
+            Container(
+              // height: 80,
+              margin: EdgeInsets.all(40),
+              // color: Colors.greenAccent,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        Container(
+                          // margin: EdgeInsets.all(5),
+                          height: 60,
+                          width: 100,
+                          color: Colors.green,
+                        ),
+                        Container(
+                          // margin: EdgeInsets.all(5),
+                          height: 60,
+                          width: 100,
+                          // color: Colors.green,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 10)
+                          ),
+                        ),
 
+                      ],
+                    )
+                  ),
+                  Expanded(
+                      child: Stack(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(5),
+                            height: 60,
+                            width: 100,
+                            color: Colors.green,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(5),
+                            height: 60,
+                            width: 100,
+                            // color: Colors.green,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black, width: 10)
+                            ),
+                          ),
+
+                        ],
+                      )
+                  ),
+                  Expanded(
+                      child: Stack(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(5),
+                            height: 60,
+                            width: 100,
+                            color: Colors.green,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(5),
+                            height: 60,
+                            width: 100,
+                            // color: Colors.green,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black, width: 10)
+                            ),
+                          ),
+
+                        ],
+                      )
+                  )
+                ],
+              ),
+            )
+
+
+
+
+
+          ],
         ),
-        // child: Text("Plus pressed $count ", style: TextStyle(color: Colors.pink, fontSize: 32),),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   elevation: 10.0,
-      //   child: Icon(Icons.add),
-      //   onPressed: (){
-      //     setState(() {
-      //       count++;
-      //     });
-      //   },
-      // ),
     );
   }
 }
