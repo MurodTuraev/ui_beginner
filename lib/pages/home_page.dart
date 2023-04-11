@@ -14,102 +14,95 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Stack(
-          children: [
-            Container(
-              color: Colors.lightBlueAccent,
+      body: Stack(
+        children: [
+          Container(
+            color: Colors.lightBlueAccent,
+          ),
+          Container(
+            // margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.blue, width: 20)
             ),
-            Container(
-              // margin: EdgeInsets.all(15.0),
-              // padding: EdgeInsets.all(3.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blueAccent, width: 20.0)
-              ),
+            child: Column(
+              children: [
+                Container(
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 15),
+                        height: 80,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black, width: 15)
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 15),
+                        height: 80,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 15)
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 15),
+                        height: 80,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 15)
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(bottom: 15),
+                        height: 80,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 15)
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
             ),
-            Container(
-              // height: 80,
-              margin: EdgeInsets.all(40),
-              // color: Colors.greenAccent,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Stack(
-                      children: [
-                        Container(
-                          // margin: EdgeInsets.all(5),
-                          height: 60,
-                          width: 100,
-                          color: Colors.green,
-                        ),
-                        Container(
-                          // margin: EdgeInsets.all(5),
-                          height: 60,
-                          width: 100,
-                          // color: Colors.green,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black, width: 10)
-                          ),
-                        ),
+          ),
+          Column(
 
-                      ],
-                    )
-                  ),
-                  Expanded(
-                      child: Stack(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(5),
-                            height: 60,
-                            width: 100,
-                            color: Colors.green,
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(5),
-                            height: 60,
-                            width: 100,
-                            // color: Colors.green,
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black, width: 10)
-                            ),
-                          ),
-
-                        ],
-                      )
-                  ),
-                  Expanded(
-                      child: Stack(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(5),
-                            height: 60,
-                            width: 100,
-                            color: Colors.green,
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(5),
-                            height: 60,
-                            width: 100,
-                            // color: Colors.green,
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black, width: 10)
-                            ),
-                          ),
-
-                        ],
-                      )
-                  )
-                ],
-              ),
-            )
-
-
-
-
-
-          ],
-        ),
-      ),
+          )
+        ],
+      )
     );
   }
 }
