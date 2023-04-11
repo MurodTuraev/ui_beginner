@@ -17,89 +17,60 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           Container(
-            color: Colors.lightBlueAccent,
+            color: Colors.white,
           ),
           Container(
-            // margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(15),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue, width: 20)
+              border: Border.all(color: Colors.blue, width: 10)
             ),
             child: Column(
               children: [
-                Container(
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: 80,
-                        color: Colors.green,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(bottom: 15),
-                        height: 80,
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black, width: 15)
-                        ),
-                      )
-                    ],
+                // Container(
+                //   child: Text('Column', style: TextStyle(color: Colors.blue),),
+                // ),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    margin: EdgeInsets.only(bottom: 10),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 10)
+                    ),
                   ),
                 ),
-                Container(
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: 80,
-                        color: Colors.green,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(bottom: 15),
-                        height: 80,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black, width: 15)
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.purple, width: 10)
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            margin: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.red, width: 10)
+                            ),
+                          ),
                         ),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: 80,
-                        color: Colors.green,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(bottom: 15),
-                        height: 80,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black, width: 15)
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: 80,
-                        color: Colors.green,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(bottom: 15),
-                        height: 80,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black, width: 15)
-                        ),
-                      )
-                    ],
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            margin: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black, width: 10)
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
-            ),
-          ),
-          Column(
-
+            )
           )
         ],
       )
